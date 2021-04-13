@@ -42,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: Column(
                   children: <Widget>[
                     Text(
-                      "Insira seus dados",
+                      "Introduce tus datos",
                       style: TextStyle(
                           color: Colors.grey.shade400,
                           fontSize: 23,
@@ -53,12 +53,12 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     LoginTextField(
                       context,
-                      "Usuário ou email",
+                      "Usuario o email",
                       controller: _controllerLogin,
                     ),
                     LoginTextField(
                       context,
-                      "Senha",
+                      "Contraseña",
                       controller: _controllerPassword,
                       obscure: true,
                     ),
@@ -78,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                     InkWell(
                       onTap: () {},
                       child: Text(
-                        "ESQUECI A SENHA",
+                        "Olvidé la contraseña",
                         style: TextStyle(
                           color: Colors.lightBlueAccent,
                           fontSize: 23,
@@ -103,19 +103,19 @@ class _LoginPageState extends State<LoginPage> {
                       child: const Text.rich(
                         TextSpan(
                           text:
-                          "Ao entrar no Duolingo, você concorda com os nossos",
+                          "Al entrar a Funspeak acepta nuestras con nuestros",
                           style: TextStyle(
                             fontSize: 18,
                             color: Color(0xFFb2b2b0),
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                                text: " Termos e ",
+                                text: "Terminos",
                                 style: TextStyle(
                                     color: Color(0xFFa5a5a3),
                                     fontWeight: FontWeight.bold)),
                             TextSpan(
-                                text: "Política de Privacidade",
+                                text: "Politicas de privacidad",
                                 style: TextStyle(
                                     color: Color(0xFFa5a5a3),
                                     fontWeight: FontWeight.bold)),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:duolingo/src/home/main_screen/home.dart';
 
 import 'login_page.dart';
 
@@ -27,11 +28,12 @@ class WelcomeScreen extends StatelessWidget {
                       SizedBox(
                         width: 280,
                         child: Text(
-                          "Aprenda idiomas de graça. Agora e sempre.",
+                          "Aprende idiomas gratis y diviértete",
                           style: TextStyle(
                             fontSize: 26,
                             color: Colors.grey.shade400,
                           ),
+                          textAlign: TextAlign.center
                         ),
                       ),
                       const Flexible(
@@ -39,17 +41,19 @@ class WelcomeScreen extends StatelessWidget {
                           heightFactor: 0.75,
                         ),
                       ),
-                      _button("COMEÇAR AGORA",
+                      _button("Crear una cuenta",
                           color: Colors.lightGreen,
-                          onPressed: () {},
+                          onPressed: () {
+
+                          },
                           colorText: Colors.white),
                       const SizedBox(
                         height: 12,
                       ),
-                      _button("JÁ TENHO UMA CONTA", color: Colors.white,
+                      _button("Ya tengo una cuenta", color: Colors.white,
                           onPressed: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => LoginPage()));
+                            MaterialPageRoute(builder: (context) => Home()));
                       }, colorText: Colors.green),
                     ],
                   ),
